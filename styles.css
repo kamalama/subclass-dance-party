@@ -37,3 +37,17 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+
+.thrillerdancer{
+  height: 75px;
+  width: 50px;
+  background-image:url('img/zombie.jpg');
+  position: absolute;
+}
+
+.thrillerdancerflip{
+  height: 75px;
+  width: 50px;
+  background-image:url('img/zombieflip.jpg');
+  position: absolute;
+}
