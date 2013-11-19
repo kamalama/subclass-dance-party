@@ -16,6 +16,7 @@
       <a href="#" class="addDancerButton" data-dancer-maker-function-name="BlinkyDancer">add a blinky dancer</a>
       <a href="#" class="addDancerButton" data-dancer-maker-function-name="BouncyDancer">add a bouncy dancer</a>
       <a href="#" class="addDancerButton" data-dancer-maker-function-name="ThrillerDancer">add a thriller dancer</a>
+      <a href="#" class="lineUpButton">Line Up!</a>
     </div>
 
     <script>
@@ -48,7 +49,15 @@
           );
 
           $('body').append(dancer.$node);
+          window.dancers.push(dancer);
         });
+
+        $(".lineUpButton").on("click", function(event){
+          for (var i = 0; i < window.dancers.length; i++) {
+            window.dancers[i].setPosition(top, 0);
+          }
+        });
+
       });
     </script>
 
