@@ -5,6 +5,7 @@ var ThrillerDancer = function(top, left, timeBetweenSteps){
 
   this.$node.addClass("thrillerdancer");
   this.$node.removeClass("dancer")
+
 };
 
 
@@ -14,4 +15,13 @@ ThrillerDancer.prototype.constructor = ThrillerDancer;
 ThrillerDancer.prototype.step = function(){
     this.oldStep();
     this.$node.toggleClass("thrillerdancerflip");
+
+
+    $(".thrillerdancer").on('mouseover', function() {
+    $(this).toggleClass('jackson');
+  })
+    $(".thrillerdancerflip").on('mouseover', function() {
+    $(this).toggleClass('jackson');
+  })
+
   };

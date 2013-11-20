@@ -49,6 +49,7 @@
           );
 
           $('body').append(dancer.$node);
+
           window.dancers.push(dancer);
         });
 
@@ -56,6 +57,11 @@
           for (var i = 0; i < window.dancers.length; i++) {
             window.dancers[i].setPosition(top, 0);
           }
+        });
+
+        $(".thrillerdancer").on("mouseover", function(){
+          // this.$node.addClass("jackson");
+          console.log(this);
         });
 
       });
